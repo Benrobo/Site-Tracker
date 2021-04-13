@@ -4,8 +4,8 @@ require("db.php");
 
 $count = 0;
 if(isset($_POST['count'])){
-    $query = mysqli_query($conn, "INSERT INTO views(count) VALUES('0')");
-    if($query){
+//     Run the below code when trying to add new item to db
+//     $query = mysqli_query($conn, "INSERT INTO views(count) VALUES('0')");
         $sql = mysqli_query($conn, "SELECT * FROM views");
         $data = mysqli_fetch_assoc($sql);
     
